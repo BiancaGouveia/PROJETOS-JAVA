@@ -9,7 +9,14 @@ public class CalculadoraIMC extends Application {
     @Override 
     public void start(Stage palco) {
         // labels for input fields
-        Label weightField = new Label("Weight");
-        Label heightField = new Label("Height");
+        Label weightLabel = new Label("Weight");
+        Label heightLabel = new Label("Height");
+
+        // text fields for data entry
+        TextField weightField = new TextField();
+        weightField.setPromptText("weight in kg");
+
+        TextField heightField = new TextField();
+        heightField.setPromptText(height in meters)
     }
 }
