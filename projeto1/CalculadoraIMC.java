@@ -17,6 +17,9 @@ public class CalculadoraIMC extends Application {
         weightField.setPromptText("weight in kg");
 
         TextField heightField = new TextField();
-        heightField.setPromptText(height in meters)
+        heightField.setPromptText("height in meters");
+
+        // label to display the IMC result
+        Label resultLabel = new Label();
     }
 }
