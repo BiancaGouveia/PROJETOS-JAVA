@@ -38,6 +38,13 @@ public class CalculadoraIMC extends Application {
         layout.setPadding(new Insets(10));
         layout.setAlignament(Pos.CENTER);
 
-        
+        // scene and stage
+        Scene cena = new Scene(layout, 300, 250);
+        palco.setTitle("IMC calculator");
+        palco.setScene(cena);
+        palco.show();
+    }
+    public static void main(String[] args) {
+        launch(args);
     }
 }
