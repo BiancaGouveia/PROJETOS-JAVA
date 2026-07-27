@@ -25,5 +25,12 @@ public class CalculadoraIMC extends Application {
         // button to calculate imc
         Button calculationButton = new Button("calculate imc");
         
+        calculationButton.setOnAction(e -> {
+            double weight = Double.parseDouble(weightField.getText());
+            double height = Double.parseDouble(heightField.getText());
+
+            double imc = weight / (height * height);
+            resultLabel.setText(String.format("Your IMC is: %.2f", imc));
+        })
     }
 }
