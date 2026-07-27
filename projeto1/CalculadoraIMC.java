@@ -31,6 +31,13 @@ public class CalculadoraIMC extends Application {
 
             double imc = weight / (height * height);
             resultLabel.setText(String.format("Your IMC is: %.2f", imc));
-        })
+        });
+
+        // vertical layout
+        VBox layout = new VBox(10, weightLabel, weightField, heightLabel, heightField, calculationButton, resultLabel);
+        layout.setPadding(new Insets(10));
+        layout.setAlignament(Pos.CENTER);
+
+        
     }
 }
