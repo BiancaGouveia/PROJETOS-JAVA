@@ -5,7 +5,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.*;
 
-public class CalculadoraIMC extends Application {
+public class Fase1 extends Application {
     @Override 
     public void start(Stage palco) {
         // labels for input fields
