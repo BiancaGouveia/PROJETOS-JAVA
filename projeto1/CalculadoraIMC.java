@@ -20,6 +20,10 @@ public class CalculadoraIMC extends Application {
         heightField.setPromptText("height in meters");
 
         // label to display the IMC result
-        Label resultLabel = new Label();
+        Label resultLabel = new Label(); 
+
+        // button to calculate imc
+        Button calculationButton = new Button("calculate imc");
+        
     }
 }
