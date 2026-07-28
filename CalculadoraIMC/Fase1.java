@@ -26,17 +26,22 @@ public class Fase1 extends Application {
         Button calculationButton = new Button("calculate imc");
         
         calculationButton.setOnAction(e -> {
-            double weight = Double.parseDouble(weightField.getText());
-            double height = Double.parseDouble(heightField.getText());
+            try {
+                double weight = Double.parseDouble(weightField.getText().replace(",", "."));
+                double height = Double.parseDouble(heightField.getText().replace(",", "."));
 
-            double imc = weight / (height * height);
-            resultLabel.setText(String.format("Your IMC is: %.2f", imc));
+                double imc = weight / (height * height);
+                resultLabel.setText(String.format("Your IMC is: %.2f", imc));
+            } catch (NumberFormatException ex) {
+                resultLabel.setText("Please enter valid numbers for height and weight.");
+            }
+            
         });
 
         // vertical layout
         VBox layout = new VBox(10, weightLabel, weightField, heightLabel, heightField, calculationButton, resultLabel);
         layout.setPadding(new Insets(10));
-        layout.setAlignament(Pos.CENTER);
+        layout.setAlignment(Pos.CENTER);
 
         // scene and stage
         Scene cena = new Scene(layout, 300, 250);
