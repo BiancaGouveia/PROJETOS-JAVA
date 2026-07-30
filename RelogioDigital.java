@@ -36,5 +36,11 @@ public class RelogioDigital extends Application {
         // vai acontecer a cada segundo, para sempre
         relogio.setCycleCount(Animation.INDEFINITE);
         relogio.play(); // inicia a timeline
+
+        VBox vboxLayout = new VBox(rotuloTempo);
+        vboxLayout.setAlignament(Pos.CENTER);
+        vboxLayout.setStyle("-fx-background-color black");
+
+        
     }
 }
