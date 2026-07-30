@@ -31,5 +31,10 @@ public class RelogioDigital extends Application {
         // criação da timeline e adição dos KeyFrames
         Timeline relogio = new Timeline();
         relogio.getKeyFrame().addAll(keyFrameAtualizar, keyFrameIntervalo);
+
+        // define-se que a ação de atualizar o rótulo com a hora atual
+        // vai acontecer a cada segundo, para sempre
+        relogio.setCycleCount(Animation.INDEFINITE);
+        relogio.play(); // inicia a timeline
     }
 }
