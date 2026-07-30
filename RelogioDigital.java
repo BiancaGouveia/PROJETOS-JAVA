@@ -28,5 +28,8 @@ public class RelogioDigital extends Application {
         // criação de outro keyframe que define o intervalo de atualização
         KeyFrame keyFrameIntervalo = new KeyFrame(Duration.seconds(1));
         
+        // criação da timeline e adição dos KeyFrames
+        Timeline relogio = new Timeline();
+        relogio.getKeyFrame().addAll(keyFrameAtualizar, keyFrameIntervalo);
     }
 }
