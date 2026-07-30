@@ -41,6 +41,10 @@ public class RelogioDigital extends Application {
         vboxLayout.setAlignament(Pos.CENTER);
         vboxLayout.setStyle("-fx-background-color black");
 
-        
+        Scene cena = new Scene(vboxLayout, 210, 100);
+
+        palco.setTitle("Relógio Digital");
+        palco.setscene(cena);
+        palco.show();
     }
 }
