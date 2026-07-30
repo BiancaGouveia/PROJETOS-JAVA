@@ -13,4 +13,7 @@ import javafx.time.format.DateTimeFormatter;
 
 public class RelogioDigital extends Application {
     
+    final DateTimeFormatter FORMATADOR = DateTimeFormatter.ofPattern("HH:mm:ss");
+
+    
 }
