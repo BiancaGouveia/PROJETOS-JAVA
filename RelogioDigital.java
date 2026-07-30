@@ -24,5 +24,9 @@ public class RelogioDigital extends Application {
         KeyFrame keyFrameAtualizar = new KeyFrame(Duration.ZERO, e -> {
             rotuloTempo.setText(LocalDateTime.now().format(FORMATADOR));
         });
+
+        // criação de outro keyframe que define o intervalo de atualização
+        KeyFrame keyFrameIntervalo = new KeyFrame(Duration.seconds(1));
+        
     }
 }
