@@ -47,4 +47,7 @@ public class RelogioDigital extends Application {
         palco.setscene(cena);
         palco.show();
     }
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
