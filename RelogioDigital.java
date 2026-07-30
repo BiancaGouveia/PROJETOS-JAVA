@@ -17,6 +17,9 @@ public class RelogioDigital extends Application {
 
     @Override
     public void start(Stage palco) {
+        Label rotuloTempo = new Label();
+        rotuloTempo.setStyle("-fx-font-size: 24pt; -fx-text-fill: yellow;");
+
         
     }
 }
