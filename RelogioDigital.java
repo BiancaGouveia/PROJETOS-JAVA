@@ -10,3 +10,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.time.LocalDateTime;
 import javafx.time.format.DateTimeFormatter;
+
+public class RelogioDigital extends Application {
+    
+}
