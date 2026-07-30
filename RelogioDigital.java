@@ -8,8 +8,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import javafx.time.LocalDateTime;
-import javafx.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class RelogioDigital extends Application {
     
@@ -30,7 +30,7 @@ public class RelogioDigital extends Application {
         
         // criação da timeline e adição dos KeyFrames
         Timeline relogio = new Timeline();
-        relogio.getKeyFrame().addAll(keyFrameAtualizar, keyFrameIntervalo);
+        relogio.getKeyFrames().addAll(keyFrameAtualizar, keyFrameIntervalo);
 
         // define-se que a ação de atualizar o rótulo com a hora atual
         // vai acontecer a cada segundo, para sempre
@@ -38,13 +38,13 @@ public class RelogioDigital extends Application {
         relogio.play(); // inicia a timeline
 
         VBox vboxLayout = new VBox(rotuloTempo);
-        vboxLayout.setAlignament(Pos.CENTER);
+        vboxLayout.setAlignment(Pos.CENTER);
         vboxLayout.setStyle("-fx-background-color black");
 
         Scene cena = new Scene(vboxLayout, 210, 100);
 
         palco.setTitle("Relógio Digital");
-        palco.setscene(cena);
+        palco.setScene(cena);
         palco.show();
     }
     public static void main(String[] args) {
