@@ -39,7 +39,7 @@ public class RelogioDigital extends Application {
 
         VBox vboxLayout = new VBox(rotuloTempo);
         vboxLayout.setAlignment(Pos.CENTER);
-        vboxLayout.setStyle("-fx-background-color black");
+        vboxLayout.setStyle("-fx-background-color: black");
 
         Scene cena = new Scene(vboxLayout, 210, 100);
 
