@@ -20,6 +20,9 @@ public class RelogioDigital extends Application {
         Label rotuloTempo = new Label();
         rotuloTempo.setStyle("-fx-font-size: 24pt; -fx-text-fill: yellow;");
 
-        
+        // criação de um keyframe
+        KeyFrame keyFrameAtualizar = new KeyFrame(Duration.ZERO, e -> {
+            rotuloTempo.setText(LocalDateTime.now().format(FORMATADOR));
+        });
     }
 }
