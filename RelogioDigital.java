@@ -15,5 +15,8 @@ public class RelogioDigital extends Application {
     
     final DateTimeFormatter FORMATADOR = DateTimeFormatter.ofPattern("HH:mm:ss");
 
-    
+    @Override
+    public void start(Stage palco) {
+        
+    }
 }
