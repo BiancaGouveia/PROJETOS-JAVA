@@ -15,6 +15,8 @@ public class GeradorSenhasSeguras {
         return senha.toString();
     }
     public static void main(String[] args) {
-  
+        int comprimentoSenha = 12;
+        String senha = gerarSenha(comprimentoSenha);
+        System.out.println("Senha gerada: " + senha);
     }
 }
