@@ -8,8 +8,8 @@ public class GeradorSenhasSeguras {
         StringBuilder senha = new StringBuilder(comprimento);
 
         for(int i=0; i<comprimento; i++) {
-            int indice = geradorDeNumeroAleatorio.nextInt(CARACTERES.lenght());
-            senha.append(CARACTERES.chatAt(indice));
+            int indice = geradorDeNumeroAleatorio.nextInt(CARACTERES.length());
+            senha.append(CARACTERES.charAt(indice));
         }
 
         return senha.toString();
