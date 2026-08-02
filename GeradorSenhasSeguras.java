@@ -14,4 +14,7 @@ public class GeradorSenhasSeguras {
 
         return senha.toString();
     }
+    public static void main(String[] args) {
+  
+    }
 }
