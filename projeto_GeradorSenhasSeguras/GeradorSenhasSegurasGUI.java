@@ -12,5 +12,6 @@ public class GeradorSenhasSegurasGUI extends Application {
         palco.setTitle("Gerador de Senhas");
 
         Label labelTamanhoSenha = new Label("Tamanho da senha:");
+        TextField campoTamanhoSenha = new TextField();
     }
 }
