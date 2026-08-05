@@ -18,5 +18,8 @@ public class GeradorSenhasSegurasGUI extends Application {
         Label labelSenhaGerada = new Label("Senha gerada:");
         TextField campoSenhaGerada = new TextField();
         campoSenhaGerada.setEditable(false);
+
+        Button botaoGerar = newButton("Gerar Senha");
+        
     }
 }
