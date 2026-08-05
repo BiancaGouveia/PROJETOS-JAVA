@@ -7,5 +7,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class GeradorSenhasSegurasGUI extends Application {
-    
+    @Override
+    public void start(Stage palco) {
+        
+    }
 }
