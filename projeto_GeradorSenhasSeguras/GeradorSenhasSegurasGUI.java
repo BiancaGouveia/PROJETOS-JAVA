@@ -10,5 +10,7 @@ public class GeradorSenhasSegurasGUI extends Application {
     @Override
     public void start(Stage palco) {
         palco.setTitle("Gerador de Senhas");
+
+        Label labelTamanhoSenha = new Label("Tamanho da senha:");
     }
 }
