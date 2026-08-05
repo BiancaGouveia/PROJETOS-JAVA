@@ -20,6 +20,8 @@ public class GeradorSenhasSegurasGUI extends Application {
         campoSenhaGerada.setEditable(false);
 
         Button botaoGerar = newButton("Gerar Senha");
-        
+        botaoGerar.setOnAction(e -> {
+
+        });
     }
 }
