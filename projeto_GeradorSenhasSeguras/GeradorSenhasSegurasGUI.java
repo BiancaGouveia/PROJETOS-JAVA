@@ -14,5 +14,7 @@ public class GeradorSenhasSegurasGUI extends Application {
         Label labelTamanhoSenha = new Label("Tamanho da senha:");
         TextField campoTamanhoSenha = new TextField();
         campoTamanhoSenha.setText("8");
+
+        Label labelSenhaGerada = new Label("Senha gerada:");
     }
 }
